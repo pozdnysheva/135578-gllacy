@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Наталья Позднышева](https://up.htmlacademy.ru/htmlcss/21/user/135578).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
