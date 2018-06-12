@@ -6,7 +6,7 @@
     <style>body{background-color: #849d8f}</style>
   </head>
   <body >
-  
+
   <header class="main-header">
     <a class="main-header-logo">
       <img class="gllacy-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
@@ -29,16 +29,9 @@
       <ul class="user-navigation">
         <li class="search-link-item">
           <a href="#" class="search-link">Поиск</a>
-          <!-- Здесь будет форма -->
         </li>
         <li class="login-link-item">
           <a href="#" class="login-link">Вход</a>
-          <!-- Здесь будет форма -->
-          <!--
-          <button>Войти</button>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-          -->
         </li>
         <li class="cart-link-item">
           <a href="#" class="cart-link">Пусто</a>
@@ -69,9 +62,18 @@
       </ul>
       <a href="#" class="button">Давайте оба!</a>
       <ul class="slider-list">
-        <li class="slider-item"><button class="slider-item-current">1</button></li>
-        <li class="slider-item"><button>2</button></li>
-        <li class="slider-item"><button>3</button></li>
+        <li>
+          <p class="visually-hidden">Переход на слайд 1</p>
+          <button class="slider-item slider-item-current" type="button">1</button>
+        </li>
+        <li>
+          <p class="visually-hidden">Переход на слайд 2</p>
+          <button class="slider-item" type="button">2</button>
+        </li>
+        <li>
+          <p class="visually-hidden">Переход на слайд 3</p>
+          <button class="slider-item" type="button">3</button>
+        </li>
       </ul>
     </section>
 
@@ -185,8 +187,11 @@
       <p>
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
-      <!-- Здесь будет форма -->
-      <button>Отправить</button>
+        <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="email-subscribe">Электронная почта</label>
+          <input type="email" name="email-subscribe" id="email-subscribe" placeholder="Электронная почта" autocomplete="on" required>
+          <button type="submit">Отправить</button>
+        </form>
     </section>
 
     <section class="contacts-and-feedback">
@@ -205,6 +210,7 @@
            (с 10 до 20 ежедневно)
         </p>
         <a href="#" class="button feedback-btn">Форма обратной связи</a>
+
       </div>
     </section>
   </main>
@@ -231,5 +237,43 @@
       </span>
     </p>
   </footer>
+
+  <section class="modal-search">
+    <h2 class="visually-hidden">Поиск по сайту</h2>
+      <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search">Поиск</label>
+        <input type="search" name="search" id="search" placeholder="Что ищем?">
+      </form>
+  </section>
+
+  <section class="modal-login">
+    <h2 class="visually-hidden">Вход в личный кабинет</h2>
+    <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="email">Электронная почта</label>
+      <input type="email" name="email" id="email" placeholder="Электронная почта" autocomplete="on" required>
+      <label class="visually-hidden" for="password">Пароль</label>
+      <input type="password" name="password" id="password" placeholder="Пароль" autocomplete="on" required>
+      <button type="submit">Войти</button>
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
+    </form>
+  </section>
+
+  <section class="modal-feedback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p>Мы обязательно вам ответим!</p>
+      <label class="visually-hidden" for="name">Ваше имя</label>
+      <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+      <label class="visually-hidden" for="email-feedback">Электронная почта</label>
+      <input type="email" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа" autocomplete="on" required>
+      <label class="visually-hidden" for="feedback-text">Текст обращения</label>
+      <textarea id="feedback-text" name="feedback-text" rows="5" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+
   </body>
 </html>
