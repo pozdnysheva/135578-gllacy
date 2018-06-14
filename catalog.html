@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Сливочное мороженое - Gllacy Shop</title>
-    <style>body{background-color: #849d8f}</style>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner">
   <header class="main-header">
     <a href="index.html" class="main-header-logo">
       <img class="gllacy-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
@@ -13,13 +14,13 @@
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li>
-          <a href="#" class="site-navigation-current">Каталог</a>
-          <ul class="catalog-list">
-            <li class="catalog-item"><a href="#">Новинки</a></li>
-            <li class="catalog-item catalog-item-current"><a>Сливочное</a></li>
-            <li class="catalog-item"><a href="#">Щербеты</a></li>
-            <li class="catalog-item"><a href="#">Фруктовый лед</a></li>
-            <li class="catalog-item"><a href="#">Мелорин</a></li>
+          <a class="site-navigation-current">Каталог</a>
+          <ul class="menu-catalog-list">
+            <li class="menu-catalog-item"><a href="#">Новинки</a></li>
+            <li class="menu-catalog-item catalog-item-current"><a>Сливочное</a></li>
+            <li class="menu-catalog-item"><a href="#">Щербеты</a></li>
+            <li class="menu-catalog-item"><a href="#">Фруктовый лед</a></li>
+            <li class="menu-catalog-item"><a href="#">Мелорин</a></li>
           </ul>
         </li>
         <li><a href="#">Доставка и оплата</a></li>
@@ -45,7 +46,7 @@
               <input type="email" name="email" id="email" placeholder="Электронная почта" autocomplete="on" required>
               <label class="visually-hidden" for="password">Пароль</label>
               <input type="password" name="password" id="password" placeholder="Пароль" autocomplete="on" required>
-              <button type="submit">Войти</button>
+              <button type="submit" class="button">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
@@ -56,18 +57,18 @@
           <section class="cart">
             <h2 class="visually-hidden">Корзина с товарами</h2>
             <table>
-              <tr>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5кг х <span class="cart-price">200руб.</span></td>
-                <td>300руб.</td>
+              <tr class="cart-product">
+                <td >Пломбир с апельсиновым джемом</td>
+                <td>1,5кг х <span class="cart-price">200 руб.</span></td>
+                <td>300 руб.</td>
               </tr>
-              <tr>
+              <tr class="cart-product">
                 <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5кг х <span class="cart-price">300руб.</span></td>
-                <td>450руб.</td>
+                <td>1,5кг х <span class="cart-price">300 руб.</span></td>
+                <td>450 руб.</td>
               </tr>
             </table>
-            <p>Итого: 750руб.</p>
+            <p class="total-price">Итого: 750 руб.</p>
             <a href="#" class="button">Оформить заказ</a>
           </section>
         </li>
@@ -77,13 +78,14 @@
     <p class="phone">8 812 450-25-25</p>
   </header>
   <main class="container">
-    <h1 class="page-title">Сливочное мороженое</h1>
 
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталог</a></li>
       <li><a class="breadcrumbs-current">Сливочное</a></li>
     </ul>
+
+    <h1 class="page-title">Сливочное мороженое</h1>
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -105,7 +107,7 @@
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
-          <ul>
+          <ul class="fat-list">
             <li>
               <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat1" >
               <label for="fat1">0%</label>
@@ -126,7 +128,7 @@
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
-          <ul>
+          <ul class="filler-list">
             <li>
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate">
               <label for="chocolate">шоколадные</label>
@@ -158,7 +160,7 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <h3>
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="catalog-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
           <p class="catalog-item-image">
             <a href="#">
@@ -172,7 +174,7 @@
         </li>
         <li class="catalog-item">
           <h3>
-            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="catalog-name" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
           <p class="catalog-item-image">
             <a href="#">
@@ -186,7 +188,7 @@
         </li>
         <li class="catalog-item">
           <h3>
-            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="catalog-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
           <p class="catalog-item-image">
             <a href="#">
@@ -200,7 +202,7 @@
         </li>
         <li class="catalog-item">
           <h3>
-            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="catalog-name" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
           <p class="catalog-item-image">
             <a href="#">
@@ -233,7 +235,7 @@
       <li><a href="#">VK</a></li>
     </ul>
     <ul class="footer-info-link">
-     <li><a href="#">Для поставщиков</a></li>
+     <li><a href="#" class="supplier">Для поставщиков</a></li>
      <li><a href="#">О производстве</a></li>
      <li><a href="#">Наши документы</a></li>
      <li><a href="#">Экологические стандарты</a></li>
@@ -242,7 +244,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">
        <img class="academy-logo" src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39">
       </a>
-      <span>
+      <span class="site-production">
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
       </span>
     </p>

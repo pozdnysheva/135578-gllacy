@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
-    <style>body{background-color: #849d8f}</style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body >
 
@@ -46,7 +48,7 @@
               <input type="email" name="email" id="email" placeholder="Электронная почта" autocomplete="on" required>
               <label class="visually-hidden" for="password">Пароль</label>
               <input type="password" name="password" id="password" placeholder="Пароль" autocomplete="on" required>
-              <button type="submit">Войти</button>
+              <button type="submit" class="button">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
@@ -54,6 +56,9 @@
         </li>
         <li class="cart-link-item">
           <a href="#" class="cart-link">Пусто</a>
+          <section class="cart">
+            <h2 class="visually-hidden">Пустая корзина</h2>
+          </section>
         </li>
       </ul>
     </nav>
@@ -79,7 +84,7 @@
           <img class="slider-photo" src="img/slide3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
         </li>
       </ul>
-      <a href="#" class="button">Давайте оба!</a>
+      <a href="#" class="button big-btn">Давайте оба!</a>
       <ul class="slider-list">
         <li>
           <button class="visually-hidden slider-item slider-item-current" type="button">Слайд 1</button>
@@ -113,9 +118,7 @@
       <h2 class="visually-hidden">Товары - хиты-продаж</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <h3>
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          </h3>
+          <a class="catalog-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <p class="catalog-item-image">
             <a href="#">
               <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -127,9 +130,7 @@
           <a class="button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
-          <h3>
-            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          </h3>
+          <a class="catalog-name" href="#">Сливочно-кофейное с кусочками шоколада</a>
           <p class="catalog-item-image">
             <a href="#">
               <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -141,9 +142,7 @@
           <a class="button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
-          <h3>
-            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          </h3>
+          <a class="catalog-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <p class="catalog-item-image">
             <a href="#">
               <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -155,9 +154,7 @@
           <a class="button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
-          <h3>
-            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          </h3>
+          <a class="catalog-name" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <p class="catalog-item-image">
             <a href="#">
               <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -173,7 +170,7 @@
 
     <section class="features">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <p>
+      <p class="features-about">
         Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
       </p>
       <ul class="features-list">
@@ -198,17 +195,19 @@
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
 
-    <section class="subscribe">
-      <h2 class="visually-hidden">Подписка</h2>
-      <p>
-        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-      </p>
+    <div class="subscribe-wrap">
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p>
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
         <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email-subscribe">Электронная почта</label>
           <input type="email" name="email-subscribe" id="email-subscribe" placeholder="Электронная почта" autocomplete="on" required>
-          <button type="submit">Отправить</button>
+          <button type="submit" class="button">Отправить</button>
         </form>
-    </section>
+      </section>
+    </div>
 
     <section class="contacts-and-feedback">
       <h2 class="visually-hidden">Контакты и обратная связь</h2>
@@ -222,8 +221,8 @@
              19/8, Санкт-Петербург<br>
            </b>
            Для заказов по телефону:<br>
-           <b>8 812 450-25-25</b><br>
-           (с 10 до 20 ежедневно)
+           <b class="phone-number">8 812 450-25-25</b><br>
+           <span class="working-hours">(с 10 до 20 ежедневно)</span>
         </p>
         <a href="#" class="button feedback-btn">Форма обратной связи</a>
 
@@ -239,7 +238,7 @@
       <li><a href="#">VK</a></li>
     </ul>
     <ul class="footer-info-link">
-     <li><a href="#">Для поставщиков</a></li>
+     <li><a href="#" class="supplier">Для поставщиков</a></li>
      <li><a href="#">О производстве</a></li>
      <li><a href="#">Наши документы</a></li>
      <li><a href="#">Экологические стандарты</a></li>
@@ -248,7 +247,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">
        <img class="academy-logo" src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39">
       </a>
-      <span>
+      <span class="site-production">
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
       </span>
     </p>
@@ -264,7 +263,7 @@
       <input type="email" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа" autocomplete="on" required>
       <label class="visually-hidden" for="feedback-text">Текст обращения</label>
       <textarea id="feedback-text" name="feedback-text" rows="5" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
-      <button type="submit">Отправить</button>
+      <button type="submit" class="button">Отправить</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
