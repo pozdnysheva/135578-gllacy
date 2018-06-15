@@ -16,6 +16,7 @@ a {
 }
 
 .site-navigation,
+.user-navigation,
 .menu-catalog-list,
 .slider-list,
 .specials-list,
@@ -448,4 +449,94 @@ a.breadcrumbs-current:hover {
 .pagination-list a:active {
   color: #323232;
   background-color: #ffffff;
+}
+/****************************************/
+body {
+/*  background-image: url('../../preview/gllacy-index-1200.jpg');*/
+  background-size: 1200px auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+  min-width: 900px;
+}
+
+.main-header {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+/*  outline: 3px solid yellow;*/
+}
+
+.main-navigation {
+  display: flex;
+/*  outline: 3px solid green;*/
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+  margin-left: 27px;
+  margin-top: 9px;
+/*  outline: 3px solid pink;*/
+}
+
+.site-navigation {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  padding-top: 28px;
+  margin-left: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-navigation {
+  width: 245px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 27px;
+  padding-top: 23px;
+  display: flex;
+  justify-content: space-between;
+/*  outline: 3px solid blue;*/
+}
+
+.user-navigation li {
+  outline: 3px solid red;
+  padding: 0;
+  margin: 0;
+  height: 32px;
+}
+
+.search-link-item {
+  width: 33px;
+  text-align: center;
+}
+
+.login-link-item {
+  width: 92px;
+  text-align: center;
+}
+
+.cart-link-item {
+  width: 100px;
+  text-align: center;
+}
+
+.opening-hours {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 27px;
+  margin-bottom: 5px;
+}
+
+.phone {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 26px;
+  margin-top: auto;
 }
