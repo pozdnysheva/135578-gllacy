@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner">
+  <div  class="container">
   <header class="main-header">
-    <a href="index.html" class="main-header-logo">
-      <img class="gllacy-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
-    </a>
     <nav class="main-navigation">
+      <a href="index.html" class="main-header-logo">
+      <img class="gllacy-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+      </a>
       <ul class="site-navigation">
         <li>
           <a class="site-navigation-current">Каталог</a>
+<!--
           <ul class="menu-catalog-list">
             <li class="menu-catalog-item"><a href="#">Новинки</a></li>
             <li class="menu-catalog-item catalog-item-current"><a>Сливочное</a></li>
@@ -22,6 +24,7 @@
             <li class="menu-catalog-item"><a href="#">Фруктовый лед</a></li>
             <li class="menu-catalog-item"><a href="#">Мелорин</a></li>
           </ul>
+-->
         </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
@@ -29,6 +32,7 @@
       <ul class="user-navigation">
         <li class="search-link-item">
           <a href="#" class="search-link">Поиск</a>
+<!--
           <section class="modal-search">
               <h2 class="visually-hidden">Поиск по сайту</h2>
                 <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
@@ -36,9 +40,11 @@
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
                 </form>
           </section>
+-->
         </li>
         <li class="login-link-item">
           <a href="#" class="login-link">Вход</a>
+<!--
           <section class="modal-login">
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
             <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
@@ -51,9 +57,11 @@
               <a href="#">Новая регистрация</a>
             </form>
           </section>
+-->
         </li>
         <li class="cart-link-item">
           <a href="#" class="cart-link">2 товара</a>
+<!--
           <section class="cart">
             <h2 class="visually-hidden">Корзина с товарами</h2>
             <table>
@@ -71,28 +79,31 @@
             <p class="total-price">Итого: 750 руб.</p>
             <a href="#" class="button">Оформить заказ</a>
           </section>
+-->
         </li>
       </ul>
     </nav>
-    <p class="opening-hours">С 10 до 20, ежедневно</p>
-    <p class="phone">8 812 450-25-25</p>
+    <div class="hedear-wrap">
+      <div class="info-container">
+        <p class="opening-hours">С 10 до 20, ежедневно</p>
+        <p class="phone">8 812 450-25-25</p>
+      </div>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a class="breadcrumbs-current">Сливочное</a></li>
+      </ul>
+    </div>
   </header>
-  <main class="container">
-
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a class="breadcrumbs-current">Сливочное</a></li>
-    </ul>
-
+  <main>
     <h1 class="page-title">Сливочное мороженое</h1>
 
     <section class="filters">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
+<!--      <h2 class="visually-hidden">Фильтр товаров</h2>-->
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Сортировка:</legend>
-          <label for="sort" class="visually-hidden">Сортировка</label>
+<!--          <label for="sort" class="visually-hidden">Сортировка</label>-->
           <select name="sort" id="sort">
             <option value="popular">по популярности</option>
             <option value="cheap">сначала недорогие</option>
@@ -102,7 +113,7 @@
         </fieldset>
         <fieldset>
           <legend>Цена:</legend>
-          <label for="price" class="visually-hidden">Цена</label>
+<!--          <label for="price" class="visually-hidden">Цена</label>-->
           <input type="range" name="price" id="price" min="100" max="500">
         </fieldset>
         <fieldset>
@@ -156,65 +167,130 @@
     </section>
 
     <section class="catalog">
-      <h2 class="visually-hidden">Список товаров - сливочное мороженое</h2>
+<!--      <h2 class="visually-hidden">Список товаров - сливочное мороженое</h2>-->
       <ul class="catalog-list">
         <li class="catalog-item">
-          <h3>
-            <a class="catalog-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="#">
-              <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            </a>
-          </p>
+          <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <a href="#" class="catalog-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+<!--
           <p class="catalog-item-price">
             310 &#8381; <span class="kg">/ кг </span>
           </p>
           <a class="button" href="#">Быстрый просмотр</a>
+-->
         </li>
         <li class="catalog-item">
-          <h3>
-            <a class="catalog-name" href="#">Сливочно-кофейное с кусочками шоколада</a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="#">
-              <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            </a>
-          </p>
+          <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          <a href="#" class="catalog-name">Сливочно-кофейное с кусочками шоколада</a>
+          
+<!--
           <p class="catalog-item-price">
             380 &#8381; <span class="kg">/ кг </span>
           </p>
           <a class="button" href="#">Быстрый просмотр</a>
+-->
         </li>
         <li class="catalog-item">
-          <h3>
-            <a class="catalog-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="#">
-              <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            </a>
-          </p>
+          <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <a href="#" class="catalog-name">Сливочно-клубничное с присыпкой из белого шоколада</a>
+<!--
           <p class="catalog-item-price">
             355 &#8381; <span class="kg">/ кг </span>
           </p>
           <a class="button" href="#">Быстрый просмотр</a>
+-->
         </li>
         <li class="catalog-item">
-          <h3>
-            <a class="catalog-name" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="#">
-              <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            </a>
-          </p>
+          <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
           <p class="catalog-item-price">
             415 &#8381; <span class="kg">/ кг </span>
           </p>
           <a class="button" href="#">Быстрый просмотр</a>
+-->
         </li>
-        <!-- Делаю только 4 карточки товара, чтобы не мешали -->
+        <li class="catalog-item">
+          <img src="img/5.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
+          <p class="catalog-item-price">
+            415 &#8381; <span class="kg">/ кг </span>
+          </p>
+          <a class="button" href="#">Быстрый просмотр</a>
+-->
+        </li>
+        
+        <li class="catalog-item">
+          <img src="img/6.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
+          <p class="catalog-item-price">
+            415 &#8381; <span class="kg">/ кг </span>
+          </p>
+          <a class="button" href="#">Быстрый просмотр</a>
+-->
+        </li>
+        <li class="catalog-item">
+          <img src="img/7.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
+          <p class="catalog-item-price">
+            415 &#8381; <span class="kg">/ кг </span>
+          </p>
+          <a class="button" href="#">Быстрый просмотр</a>
+-->
+        </li>
+        <li class="catalog-item">
+          <img src="img/8.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
+          <p class="catalog-item-price">
+            415 &#8381; <span class="kg">/ кг </span>
+          </p>
+          <a class="button" href="#">Быстрый просмотр</a>
+-->
+        </li>
+        <li class="catalog-item">
+          <img src="img/9.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
+          <p class="catalog-item-price">
+            415 &#8381; <span class="kg">/ кг </span>
+          </p>
+          <a class="button" href="#">Быстрый просмотр</a>
+-->
+        </li>
+        <li class="catalog-item">
+          <img src="img/10.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
+          <p class="catalog-item-price">
+            415 &#8381; <span class="kg">/ кг </span>
+          </p>
+          <a class="button" href="#">Быстрый просмотр</a>
+-->
+        </li>
+        <li class="catalog-item">
+          <img src="img/11.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
+          <p class="catalog-item-price">
+            415 &#8381; <span class="kg">/ кг </span>
+          </p>
+          <a class="button" href="#">Быстрый просмотр</a>
+-->
+        </li>
+        <li class="catalog-item">
+          <img src="img/12.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
+<!--
+          <p class="catalog-item-price">
+            415 &#8381; <span class="kg">/ кг </span>
+          </p>
+          <a class="button" href="#">Быстрый просмотр</a>
+-->
+        </li>
       </ul>
 
       <ul class="pagination-list">
@@ -249,6 +325,6 @@
       </span>
     </p>
   </footer>
-
+  </div>
   </body>
 </html>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body >
+  <body class="index">
   
   <div  class="container">
   <header class="main-header">
@@ -71,8 +71,10 @@
         </li>
       </ul>
     </nav>
-    <p class="opening-hours">С 10 до 20, ежедневно</p>
-    <p class="phone">8 812 450-25-25</p>
+    <div class="info-container">
+      <p class="opening-hours">С 10 до 20, ежедневно</p>
+      <p class="phone">8 812 450-25-25</p>
+    </div>
   </header>
 
   <main>
@@ -82,20 +84,20 @@
       <ul class="slider-list">
         <li class="slider-list-item">
           <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-<!--          <img class="slider-photo" src="img/slide1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">-->
+          <a href="#" class="button big-btn">Давайте оба!</a>
         </li>
 <!--
         <li class="slider-list-item">
           <h2>Шоколадный пломбир и лимонный сорбет</h2>
-          <img class="slider-photo" src="img/slide2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
+          <a href="#" class="button big-btn">Давайте оба!</a>
         </li>
         <li class="slider-list-item">
           <h2>Пломбир с помадкой и клубничный щербет</h2>
-          <img class="slider-photo" src="img/slide3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
+          <a href="#" class="button big-btn">Давайте оба!</a>
         </li>
 -->
       </ul>
-      <a href="#" class="button big-btn">Давайте оба!</a>
+      
 <!--
       <ul class="slider-buttons">
         <li>
@@ -131,10 +133,8 @@
 <!--      <h2 class="visually-hidden">Товары - хиты-продаж</h2>-->
       <ul class="catalog-list">
         <li class="catalog-item">
-          <a href="#">
-            <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p class="catalog-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          </a>
+          <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <a href="#" class="catalog-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 <!--
           <p class="catalog-item-price">
             310 &#8381; <span class="kg">/ кг </span>
@@ -143,10 +143,9 @@
 -->
         </li>
         <li class="catalog-item">
-          <a href="#">
-            <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <p class="catalog-name">Сливочно-кофейное с кусочками шоколада</p>
-          </a>
+          <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          <a href="#" class="catalog-name">Сливочно-кофейное с кусочками шоколада</a>
+          
 <!--
           <p class="catalog-item-price">
             380 &#8381; <span class="kg">/ кг </span>
@@ -155,10 +154,8 @@
 -->
         </li>
         <li class="catalog-item">
-          <a href="#">
-            <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p class="catalog-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
-          </a>
+          <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <a href="#" class="catalog-name">Сливочно-клубничное с присыпкой из белого шоколада</a>
 <!--
           <p class="catalog-item-price">
             355 &#8381; <span class="kg">/ кг </span>
@@ -167,10 +164,8 @@
 -->
         </li>
         <li class="catalog-item">
-          <a href="#">
-            <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <p class="catalog-name">Сливочное крем-брюле с карамельной подливкой</p>
-          </a>
+          <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <a href="#" class="catalog-name">Сливочное крем-брюле с карамельной подливкой</a>
 <!--
           <p class="catalog-item-price">
             415 &#8381; <span class="kg">/ кг </span>
@@ -187,14 +182,10 @@
         Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
       </p>
       <ul class="features-list">
-        <li class="features-column">
-          <p class="feature-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-          <p class="feature-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </li>
-        <li class="features-column">
-          <p class="feature-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-          <p class="feature-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-        </li>
+        <li class="feature-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+        <li class="feature-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+        <li class="feature-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+        <li class="feature-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
       </ul>
     </section>
 
@@ -233,7 +224,7 @@
         <div class="phone-container">
           8 812 450-25-25
         </div>
-        (с 10 до 20 ежедневно)
+        (с 10 до 20 ежедневно)<br>
         <a href="#" class="button feedback-btn">Форма обратной связи</a>
       </div>
     </section>
@@ -249,8 +240,8 @@
     </ul>
     <ul class="footer-info-link">
       <li><a href="#" class="supplier">Для поставщиков</a></li>
-      <li><a href="#">О производстве</a></li>
       <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
     <div class="footer-copyright">
