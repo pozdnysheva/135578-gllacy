@@ -61,6 +61,20 @@
           <a href="#" class="user-link cart-link">2 товара</a>
           <section class="cart">
             <h2 class="visually-hidden">Корзина</h2>
+            <table>
+              <tr class="cart-product">
+                <td class="cart-name">Пломбир с апельсиновым джемом</td>
+                <td>1,5кг х <span class="cart-price">200 руб.</span></td>
+                <td>300 руб.</td>
+              </tr>
+              <tr class="cart-product">
+                <td class="cart-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5кг х <span class="cart-price">300 руб.</span></td>
+                <td>450 руб.</td>
+              </tr>
+            </table>
+            <p class="total-price">Итого: 750 руб.</p>
+            <a href="#" class="button order-btn">Оформить заказ</a>
           </section>
         </li>
       </ul>
@@ -94,9 +108,18 @@
           </select>
         </fieldset>
         <fieldset>
-          <legend>Цена:</legend>
+          <legend>Цена: 100 руб. - 500 руб.</legend>
+<!--
           <label for="price" class="visually-hidden">Цена</label>
           <input type="range" name="price" id="price" min="100" max="500">
+-->
+          <div class="filter-price">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>

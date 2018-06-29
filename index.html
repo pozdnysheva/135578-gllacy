@@ -257,20 +257,22 @@
     </div>
   </footer>
 
-  <section class="modal-feedback visually-hidden">
+  <div class="modal-wrapper">
+  <section class="modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
+    <p>Мы обязательно вам ответим!</p>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-      <p>Мы обязательно вам ответим!</p>
       <label class="visually-hidden" for="name">Ваше имя</label>
       <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
       <label class="visually-hidden" for="email-feedback">Электронная почта</label>
       <input type="email" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа" autocomplete="on" required>
       <label class="visually-hidden" for="feedback-text">Текст обращения</label>
-      <textarea id="feedback-text" name="feedback-text" rows="5" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
-      <button type="submit" class="button">Отправить</button>
+      <textarea id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..." required></textarea>
+      <button type="submit" class="button modal-btn">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
   </section>
+  </div>
 </div>
   </body>
 </html>
