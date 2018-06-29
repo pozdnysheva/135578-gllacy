@@ -1153,9 +1153,9 @@ a.breadcrumbs-current:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   padding-left: 21px;
-  padding-right: 21px;
+  padding-right: 4px;
 }
 
 .filter select:hover,
@@ -1168,7 +1168,8 @@ a.breadcrumbs-current:hover {
   line-height: 16px;
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
+  padding-left: 15px;
 }
 
 .filter-button {
@@ -1180,8 +1181,10 @@ a.breadcrumbs-current:hover {
   text-align: center;
   vertical-align: middle;
   border: none;
-  padding: 10px 27px;
-  margin: auto 0;
+  padding: 9px 27px;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 15px;
   border-radius: 40px;
   box-shadow: inset 0 0 0 2px #fbfcfb;
 }
@@ -1262,14 +1265,13 @@ a.breadcrumbs-current:hover {
   padding: 0;
   width: 879px;
   flex-wrap: wrap;
-  padding-left: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .filter fieldset {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-right: 15px;
 }
 
@@ -1280,7 +1282,7 @@ a.breadcrumbs-current:hover {
   height: 36px;
   padding-top: 16px;
   padding-left: 21px;
-  padding-right: 21px;
+  padding-right: 19px;
   box-sizing: border-box;
   position: relative;
 }
@@ -1321,7 +1323,7 @@ a.breadcrumbs-current:hover {
 .page-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .fat-list {
@@ -1331,7 +1333,7 @@ a.breadcrumbs-current:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 44px;
   padding-right: 11px;
 }
@@ -1343,7 +1345,7 @@ a.breadcrumbs-current:hover {
 .filler-list {
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 48px;
   padding-right: 20px;
   display: flex;
@@ -1360,7 +1362,7 @@ a.breadcrumbs-current:hover {
 }
 
 .inner .catalog {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .inner .catalog-item {
