@@ -109,10 +109,6 @@
         </fieldset>
         <fieldset>
           <legend>Цена: 100 руб. - 500 руб.</legend>
-<!--
-          <label for="price" class="visually-hidden">Цена</label>
-          <input type="range" name="price" id="price" min="100" max="500">
--->
           <div class="filter-price">
             <div class="scale">
               <div class="bar"></div>
@@ -125,19 +121,19 @@
           <legend>Жирность:</legend>
           <ul class="fat-list">
             <li>
-              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat1" >
+              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat1" value="fat0">
               <label for="fat1">0%</label>
             </li>
             <li>
-              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat2">
+              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat2" value="fat10">
               <label for="fat2">до 10%</label>
             </li>
             <li>
-              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat3">
+              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat3" value="fat30">
               <label for="fat3">до 30%</label>
             </li>
             <li>
-              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat4">
+              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat4" value="fat30more">
               <label for="fat4">выше 30%</label>
             </li>
           </ul>
