@@ -7,7 +7,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
-  background-color: #849d8f;
 }
 
 a {
@@ -36,9 +35,23 @@ input[type="radio"].visually-hidden {
 }
 
 .index {
-  background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: center 0;
+}
+
+.index-slide-1 {
+  background-color: #849d8f;
+  background-image: url("../img/slide1.png");
+}
+
+.index-slide-2 {
+  background-color: #8996a6;
+  background-image: url("../img/slide2.png");
+}
+
+.index-slide-3 {
+  background-color: #9d8b84;
+  background-image: url("../img/slide3.png");
 }
 
 .container {
@@ -213,6 +226,10 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
 }
 
+.inner {
+  background-color: #849d8f;
+}
+
 .inner .user-navigation {
   width: 262px;
 }
@@ -227,7 +244,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  background-color: #a1b4a9;
+  background-color: rgba(255, 255, 255, 0.2);
   display: block;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -606,7 +623,7 @@ input[type="radio"].visually-hidden {
   line-height: 60.35px;
   color: #ffffff;
   text-align: center;
-  width: 670px;
+  width: 680px;
   padding: 0;
   margin: 0 auto;
   padding-top: 270px;
