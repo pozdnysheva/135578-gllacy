@@ -208,6 +208,7 @@
 
     <section class="contacts-and-feedback">
       <h2 class="visually-hidden">Контакты и обратная связь</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBuBnOUVlA" width="1200" height="430"></iframe>
       <div class="contacts-container">
         Адрес главного офиса<br>
         и офлайн-магазина:
@@ -220,7 +221,7 @@
           8 812 450-25-25
         </div>
         (с 10 до 20 ежедневно)<br>
-        <a href="#" class="button feedback-btn">Форма обратной связи</a>
+        <a href="feedback.html" class="button feedback-btn">Форма обратной связи</a>
       </div>
     </section>
 
@@ -257,22 +258,21 @@
     </div>
   </footer>
 
-  <div class="modal-wrapper">
-  <section class="modal-feedback visually-hidden">
+  <section class="modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <p>Мы обязательно вам ответим!</p>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
       <label class="visually-hidden" for="name">Ваше имя</label>
-      <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+      <input type="text" id="name" name="name" placeholder="Как вас зовут?">
       <label class="visually-hidden" for="email-feedback">Электронная почта</label>
-      <input type="email" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа" autocomplete="on" required>
+      <input type="email" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа" autocomplete="on">
       <label class="visually-hidden" for="feedback-text">Текст обращения</label>
-      <textarea id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..." required></textarea>
+      <textarea id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
       <button type="submit" class="button modal-btn">Отправить</button>
     </form>
   </section>
   </div>
-</div>
-  </body>
+  <script src="js/popup.js"></script>
+</body>
 </html>
