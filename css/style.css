@@ -1313,6 +1313,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs-link::after {
+  font-family: 'Roboto', 'Arial', sans-serif;
   content: ">>";
   padding-left: 8px;
 }
