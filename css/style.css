@@ -154,9 +154,10 @@ input[type="radio"].visually-hidden {
   border-radius: 10px;
 }
 
-.view-submenu:hover .submenu,
+.view-submenu:hover .submenu {
+  display: block;
+}
 .view-submenu:focus-within .submenu {
-/*  visibility: visible;*/
   display: block;
 }
 
@@ -332,10 +333,12 @@ input[type="radio"].visually-hidden {
 }
 
 .search-link-item:hover .modal-search,
+.login-link-item:hover .modal-login {
+  display: block;
+}
+
 .search-link-item:focus-within .modal-search,
-.login-link-item:hover .modal-login,
-.login-link-item:focus-within .modal-login{
-/*  visibility: visible;*/
+.login-link-item:focus-within .modal-login {
   display: block;
 }
 
@@ -753,9 +756,10 @@ input[type="radio"].visually-hidden {
   z-index: 200;
 }
 
-.catalog-item:hover .view-wrapper,
+.catalog-item:hover .view-wrapper {
+  display: block;
+}
 .catalog-item:focus-within .view-wrapper {
-/*  visibility: visible;*/
   display: block;
 }
 
@@ -1056,7 +1060,7 @@ input[type="radio"].visually-hidden {
 .contacts-container {
   position: absolute;
   z-index: 300;
-  top: 62px;  
+  top: 62px;
   right: 29px;
   width: 275px;
   border-radius: 10px;
@@ -1764,9 +1768,10 @@ a.breadcrumbs-current:hover {
   position: relative;
 }
 
-.cart-link-item:hover .cart,
+.cart-link-item:hover .cart {
+  display: block;
+}
 .cart-link-item:focus-within .cart {
-/*  visibility: visible;*/
   display: block;
 }
 
