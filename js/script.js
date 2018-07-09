@@ -115,4 +115,3 @@ button3.addEventListener("click", function (evt) {
   button2.classList.remove("slider-item-current");
   button3.classList.add("slider-item-current");
 });
-
