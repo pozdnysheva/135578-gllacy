@@ -891,9 +891,10 @@ input[type="radio"].visually-hidden {
 
 .feature-item::before {
   content: "";
+  display: block;
+  position: absolute;
   margin-left: -55px;
-  margin-top: -10px;
-  float: left;
+  margin-top: -11px;
   width: 51px;
   height: 51px;
   background-image: url("../img/ice-cream.svg");
